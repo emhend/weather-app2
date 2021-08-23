@@ -1,5 +1,5 @@
 body {
-  background-image: url(".../images/wavy.png");
+  background-image: url("../images/wavy.png");
   background-repeat: repeat;
   background-size: cover;
 }
