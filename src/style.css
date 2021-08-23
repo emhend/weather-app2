@@ -1,0 +1,120 @@
+body {
+  background-image: url(images/wavy.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+h1 {
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: #42a3b8;
+  font-size: 48px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.app {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-family: "Righteous", cursive;
+  display: block;
+  color: #d54c4c;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 42px;
+}
+p {
+  font-family: monospace;
+  color: #000000;
+  text-align: center;
+  font-size: 10;
+  display: block;
+  padding: 0px;
+}
+
+.p-footer {
+  font-size: 10px;
+  font-family: monospace;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.para-1 {
+  font-size: 12px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #352020;
+  padding: 0;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 525;
+}
+.para-2 {
+  font-size: 28px;
+  text-align: center;
+  font-family: monospace;
+  color: #42a3b8;
+  padding: 0;
+  display: block;
+  position: relative;
+  margin: 0;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.card-two {
+  background-color: #f7e6cc;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  border: solid 1px #352020;
+  border-radius: 5px;
+}
+.card-one {
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: fit-content;
+  background-color: #f7ddb4;
+  border: solid 1px #352020;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.linkedin {
+  color: #fff;
+}
+.linkedin:hover {
+  color: #d54c4c;
+  cursor: pointer;
+}
+button {
+  background-color: #42a3b8;
+  padding: 2px 2px;
+  border: solid 0.3px #000;
+  border-radius: 5px;
+}
+
+input {
+  border: solid 0.3px #000;
+}

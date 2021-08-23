@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/5b0b16b9a1.js" crossorigin="anonymous"></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link href="src/index.js"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="card card-one">
+        <p class="para-1" id="current-date"> </p>
+        <form class="app" id="search-form">
+            <input 
+            type="search" 
+            placeholder="Enter City Here" 
+            autofocus="on" id="cityInput"/> <button 
+            type="search"
+            id="search"
+            value="submit">Search</button> <button class="2" id="current">Current Location</button></form>
+       
+       <div class="para-1">Currently In:</div>
+        <h1 id="city"> </h1>
+            <hr />
+        <h3 id="temperature">83°</h3>
+        <div class="para-2"><i class="fas fa-moon"></i></div>
+        <br />
+        <div class="card text-center">
+            <div class="card-body card-two">
+          <div class="row">
+            <div class="col">
+                 <span class="para-1">Sunday</span>
+              <h2>96°</h2>
+              <span class="para-2"><i class="fas fa-cloud-sun"></i></span>
+            </div>
+            <div class="col">
+                <span class="para-1">Monday</span>
+              <h2>97°</h2>
+              <span class="para-2"><i class="fas fa-sun"></i></span>
+            </div>
+            <div class="col">
+                <span class="para-1">Tuesday</span>
+              <h2>96°</h2>
+              <span class="para-2"><i class="fas fa-cloud-sun"></i></span>
+            </div>
+            <div class="col">
+                <span class="para-1">Wednesday</span>
+              <h2>95°</h2>
+              <span class="para-2"><i class="fas fa-cloud-sun-rain"></i></span>
+            </div>
+            <div class="col">
+                <span class="para-1">Thursday</span>
+              <h2>95°</h2>
+              <span class="para-2"><i class="fas fa-sun"></i>
+
+</span>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="p-footer">
+        This page was built by
+        <a href="https://www.linkedin.com/in/emilyjhend/" class="linkedin">Emily Henderson</a>
+      </p>
+    </div>
+
+  </body>
+</html>
