@@ -109,12 +109,14 @@ p {
   cursor: pointer;
 }
 button {
-  background-color: #42a3b8;
+  background-color: #fffbc5;
   padding: 2px 2px;
-  border: solid 0.3px #000;
+  border: solid 1px #000;
   border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
 }
 
-input {
-  border: solid 0.3px #000;
+input-form {
+  width: 30px;
 }
