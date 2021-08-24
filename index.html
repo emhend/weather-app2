@@ -27,7 +27,7 @@
     <div class="container">
       
       <div class="card card-one">
-        <p class="para-1" id="current-date"> </p>
+        <p class="para-1" id="current-date"></p>
         <form class="form-inline app" id="search-form">
             <input 
             class="form-control form-control-sm input-form"
@@ -38,42 +38,47 @@
             type="search"
             id="search"
             value="submit">Search</button> <button class="btn btn-outline-info btn-sm" id="current">Current Location</button></form>
-       
+      <hr />
        <div class="para-1">Currently In:</div>
-        <h1 id="city"> </h1>
-            <hr />
+        <h1 id="city"></h1>
+<div class="center-container">
         <h3 id="temperature"></h3>
-        <div class="para-2"><i class="fas fa-moon"></i></div>
-        <br />
+<ul class="container-list">
+  <li id="humidity">humidity</li>
+  <li class="wind">wind</li>
+  <li class="percipitation">percipitation</li>
+</ul>
+        <div class="para-3" id="icon">
+          <i class="fas fa-cloud-sun"></i>
+</div></div>
+        <hr />
         <div class="card text-center">
             <div class="card-body card-two">
-          <div class="row">
+          <div class="row" id="forecast">
             <div class="col">
-                 <span class="para-1">Sunday</span>
+                 <span class="para-1" id="day">Sunday</span>
               <h2>96°</h2>
-              <span class="para-2"><i class="fas fa-cloud-sun"></i></span>
+              <span class="para-2" id="symbol"><i class="fas fa-cloud-sun"></i></span>
             </div>
             <div class="col">
-                <span class="para-1">Monday</span>
+                <span class="para-1" id="day">Monday</span>
               <h2>97°</h2>
-              <span class="para-2"><i class="fas fa-sun"></i></span>
+              <span class="para-2" id="symbol"><i class="fas fa-sun"></i></span>
             </div>
             <div class="col">
-                <span class="para-1">Tuesday</span>
+                <span class="para-1" id="day">Tuesday</span>
               <h2>96°</h2>
-              <span class="para-2"><i class="fas fa-cloud-sun"></i></span>
+              <span class="para-2" id="symbol"><i class="fas fa-cloud-sun"></i></span>
             </div>
             <div class="col">
-                <span class="para-1">Wednesday</span>
+                <span class="para-1" id="day">Wednesday</span>
               <h2>95°</h2>
-              <span class="para-2"><i class="fas fa-cloud-sun-rain"></i></span>
+              <span class="para-2" id="symbol"><i class="fas fa-cloud-sun-rain"></i></span>
             </div>
             <div class="col">
-                <span class="para-1">Thursday</span>
+                <span class="para-1" id="day">Thursday</span>
               <h2>95°</h2>
-              <span class="para-2"><i class="fas fa-sun"></i>
-
-</span>
+              <span class="para-2" id="symbol"><i class="fas fa-sun"></i></span>
             </div>
             </div>
             </div>
@@ -81,8 +86,8 @@
         </div>
       </div>
       <p class="p-footer">
-        This page was built by
-        <a href="https://github.com/emhend/weather-app2" class="linkedin">Emily Henderson</a>
+        <a href="https://github.com/emhend/weather-app2" class="linkedin" target="_blank">Open-source code</a> by
+        <a href="https://www.linkedin.com/in/emilyjhend/" class="linkedin" target="_blank">Emily Henderson</a>
       </p>
     </div>
     <script src="src/index.js"></script>

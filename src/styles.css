@@ -13,30 +13,30 @@ h1 {
   padding: 5px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-
-.app {
-  position: relative;
-  text-align: center;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
 h2,
 h3 {
   font-family: "Righteous", cursive;
-  display: block;
   color: #d54c4c;
-  text-align: center;
   margin: 0 auto;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 h2 {
   font-size: 36px;
+  display: block;
+  text-align: center;
 }
 h3 {
-  font-size: 42px;
+  font-size: 52px;
+  position: absolute;
+  margin-left: 100px;
+}
+.app {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 p {
   font-family: monospace;
@@ -67,8 +67,8 @@ p {
   text-decoration: underline;
   font-weight: 525;
 }
-.para-2 {
-  font-size: 28px;
+.para-2,
+.para-3 {
   text-align: center;
   font-family: monospace;
   color: #42a3b8;
@@ -78,7 +78,12 @@ p {
   margin: 0;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
-
+.para-2 {
+  font-size: 28px;
+}
+.para-3 {
+  font-size: 38px;
+}
 .card-two {
   background-color: #f7e6cc;
   text-align: center;
@@ -107,4 +112,22 @@ p {
 .linkedin:hover {
   color: #d54c4c;
   cursor: pointer;
+}
+.container-list {
+  font-size: 12px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #352020;
+  padding: 0;
+  position: absolute;
+  margin-left: 275px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 525;
+  text-decoration: none;
+  list-style: none;
+}
+
+.center-container {
+  margin: 0;
 }
