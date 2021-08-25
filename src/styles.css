@@ -26,7 +26,7 @@ h2 {
   margin: 0 auto;
 }
 h3 {
-  font-size: 56px;
+  font-size: 60px;
 }
 .app {
   position: relative;
@@ -116,16 +116,4 @@ p {
   text-transform: uppercase;
   font-weight: 525;
   list-style: none;
-}
-
-.icon {
-  text-align: center;
-  font-size: 28px;
-  font-family: monospace;
-  color: #42a3b8;
-  padding: 0;
-  display: block;
-  position: relative;
-  margin: 0;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
