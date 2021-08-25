@@ -117,3 +117,8 @@ p {
   font-weight: 525;
   list-style: none;
 }
+
+.icon {
+  max-width: 70px;
+  filter: drop-shadow(1px 1px 1px #000);
+}

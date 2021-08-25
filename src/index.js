@@ -34,7 +34,7 @@ function displayWeather(response) {
     "Wind: " + Math.round(response.data.wind.speed) + "MPH";
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `images/${response.data.weather[0].icon}.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
