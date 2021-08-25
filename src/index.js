@@ -21,24 +21,22 @@ function formatDate(date) {
 }
 function displayWeather(response) {
   fahrenheitTemperature = response.data.main.temp;
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
     Math.round(response.data.main.temp) + "°";
-  let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
-  let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = "Humidity: " + response.data.main.humidity + "%";
-  let windElement = document.querySelector("#wind");
   windElement.innerHTML =
     "Wind: " + Math.round(response.data.wind.speed) + "MPH";
-  let precipitationElement = document.querySelector("#precipitation");
-  precipitationElement.innerHTML =
-    "Precipitation: " + Math.round(response.data.main.rain);
-  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function searchCity(city) {
   let apiKey = "343e26b3ffb2c17a61d6a1123defd48c";
