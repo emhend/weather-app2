@@ -19,19 +19,38 @@ function formatDate(date) {
   ];
   return `${days[dayIndex]} ${hours}:${minutes}`;
 }
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return days[day];
+}
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
+
   let forecastHTML = `<div class="row">`;
-  let forecastDays = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
-  forecastDays.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `  <div class="col">
-                 <span class="para-1">${day}</span>
-              <h2>96°</h2>
-              <span class="para-2" id="symbol"><i class="fas fa-cloud-sun"></i></span>
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `  <div class="col">
+                 <span class="para-1">${formatDay(forecastDay.dt)}</span>
+              <h2>${Math.round(forecastDay.temp.max)}°</h2>
+              <span class="para-2"><img src="images/${
+                forecastDay.weather[0].icon
+              }.png"></span>
             </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;

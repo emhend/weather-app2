@@ -65,14 +65,8 @@ p {
 }
 .para-2 {
   text-align: center;
-  font-size: 28px;
-  font-family: monospace;
-  color: #42a3b8;
-  padding: 0;
-  display: block;
-  position: relative;
-  margin: 0;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  max-width: 35px;
+  filter: drop-shadow(1px 1px 1px #000);
 }
 .para-3 {
   margin: 0 auto;
